@@ -1,5 +1,4 @@
-// developer(s): Anjana Priya Bachina and Nikhitha Dadi
-// last modified: 29-11-2024
+
 // Import the Pool class from the pg module
 const { Pool } = require('pg');
 // Create a new Pool instance with database connection configuration
