@@ -1,5 +1,3 @@
---developer(s): Anjana Priya Bachina and Nikhitha Dadi
---last modified: 29-11-2024
 -- Drop existing tables if they exist
 DROP TABLE IF EXISTS enrollments;
 DROP TABLE IF EXISTS courses;
