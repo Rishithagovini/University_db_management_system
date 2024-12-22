@@ -1,6 +1,4 @@
-// developer(s): Anjana Priya Bachina and Nikhitha Dadi
-// last modified: 29-11-2024
-// Import express router and database pool for queries
+
 const router = require('express').Router();
 const pool = require('../config/db');
 
