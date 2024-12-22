@@ -1,5 +1,4 @@
-// developer(s): Anjana Priya Bachina and Nikhitha Dadi
-// last modified: 29-11-2024
+
 const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
