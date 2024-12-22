@@ -1,5 +1,3 @@
-// Developer: Anjana Priya Bachina and Nikhitha Dadi
-//Last Modified: 29-11-2024
 // Import necessary utilities from React Testing Library and the App component
 import { render, screen } from '@testing-library/react';
 import App from './App';
