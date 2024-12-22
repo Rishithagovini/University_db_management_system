@@ -1,6 +1,4 @@
-// developer(s): Anjana Priya Bachina and Nikhitha Dadi
-// last modified: 29-11-2024
-// Import express router to handle routes related to courses
+
 const coursesRouter = require('express').Router();
 // GET route to fetch all courses, including department and instructor details
 coursesRouter.get('/', async (req, res) => {
