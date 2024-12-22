@@ -38,7 +38,7 @@ Before starting, ensure the following are installed:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/University_db_management_system.git
+git clone https://github.com/Rishithagovini/University_db_management_system.git
 cd University_db_management_system
 ```
 
@@ -58,9 +58,26 @@ npm install
 
 ### 4️⃣ Set Up the PostgreSQL Database
 1. Open **PostgreSQL** using the terminal or your preferred database tool.
-2. Run the `schema.sql` file to set up the database structure:
+2. Create your own database:
+   ```sql
+   CREATE DATABASE college_db;
+   ```
+3. Run the `schema.sql` file to set up the database structure:
    ```bash
-   psql -U <your-username> -d <your-database-name> -f schema.sql
+   psql -U <your-username> -d college_db -f schema.sql
+   ```
+
+4. Update the database credentials in the `server` code. In the backend, locate the database connection configuration in your Node.js code and update it as follows:
+
+   ```javascript
+   // Create a new Pool instance with database connection configuration
+   const pool = new Pool({
+       user: 'username',      // Replace with your PostgreSQL username
+       password: 'password',  // Replace with your PostgreSQL password
+       host: 'localhost',
+       port: 5432,
+       database: 'college_db' // Use the name of your created database
+   });
    ```
 
 ---
@@ -112,4 +129,4 @@ The database schema includes the following tables:
 
 Feel free to contribute to this project by submitting issues or pull requests!
 
----
+--- 
